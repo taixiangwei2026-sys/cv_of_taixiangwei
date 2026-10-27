@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--
+  邰翔伟 · 个人 CV 作品集（单页 · 热血黑白漫画风 · 中英双语）
+  本地测试：进入 docs 目录后运行  python -m http.server  再打开 http://127.0.0.1:8000
+  需要替换 / 补充的位置：
+    1. 作品集（#works）：3 个作品位目前是「待补充」，拿到原文 / 译文 / 翻译说明后填进 .work 卡片
+    2. 手机号未公开（按你的要求），如要展示：在 #contact 里加一行即可
+    3. 简历文件：docs/cv.pdf，按钮指向 ./cv.pdf
+  不含任何 GitHub 上传 / 部署逻辑。
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n-title="title.page">邰翔伟 · 译者作品集 | CV Portfolio</title>
+  <meta name="description" content="邰翔伟 / Tai Xiangwei —— 译者、英语专业、翻译与语言技术方向硕士。个人 CV 与翻译作品集。">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#hero">
+      <strong data-i18n="hero.name">邰翔伟</strong>
+      <span data-i18n="hero.nameEn">TAI XIANGWEI</span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#hero" data-i18n="nav.hero">首页</a>
+      <a href="#about" data-i18n="nav.about">关于</a>
+      <a href="#education" data-i18n="nav.edu">教育</a>
+      <a href="#skills" data-i18n="nav.skills">技能</a>
+      <a href="#works" data-i18n="nav.works">作品集</a>
+      <a href="#cv" data-i18n="nav.cv">简历</a>
+      <a href="#contact" data-i18n="nav.contact">联系</a>
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-label="menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="halftone"></div>
+    <div class="speedlines"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-badge" data-i18n="hero.badge">全 力 以 赴</div>
+    <p class="hero-kicker" data-i18n="hero.kicker">重庆大学 英语专业 → 香港理工大学 翻译与语言技术</p>
+    <h1 class="hero-name" data-i18n="hero.name">邰翔伟</h1>
+    <p class="hero-name-en" data-i18n="hero.nameEn">TAI XIANGWEI</p>
+    <div class="hero-title" data-i18n="hero.title">译者 · 英专 · 语言技术</div>
+    <p class="hero-lead" data-i18n="hero.lead">把每一句话，燃到最准确的位置。</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="./cv.pdf" download="TaiXiangwei-CV.pdf" type="application/pdf" data-cv-download data-i18n="hero.btn1">下载简历</a>
+      <a class="btn" href="#works" data-i18n="hero.btn2">看作品集</a>
+    </div>
+    <p class="hero-scroll" data-i18n="hero.scroll">▼ 往下看 ▼</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="section-title" data-i18n="about.title">关于我</h2>
+    <p class="section-sub" data-i18n="about.sub">About me</p>
+
+    <div class="panel reveal" style="max-width:760px;margin:0 auto 26px;">
+      <p data-i18n="about.p1">英语专业出身的译者，具备扎实的英语语言能力与良好的沟通协调技巧；大学三年学生干部经历，让我拥有较强的组织执行力与团队协作意识。</p>
+      <p style="margin-top:12px;" data-i18n="about.p2">工作态度认真负责，学习能力强，乐于迎接新挑战；希望在教育、文化交流或国际贸易领域进一步发展。</p>
+    </div>
+
+    <div class="divider reveal"><i></i><b>◆</b><i></i></div>
+
+    <div class="panel reveal" style="max-width:760px;margin:0 auto 34px;">
+      <h3 data-i18n="info.title">基本信息</h3>
+      <ul style="margin-top:14px;">
+        <li><span data-i18n="info.email">邮箱</span> · <strong data-i18n="info.email.value">taixiangwei2026@163.com</strong></li>
+        <li><span data-i18n="info.hometown">籍贯</span> · <span data-i18n="info.hometown.value">安徽 · 阜阳</span></li>
+        <li><span data-i18n="info.born">出生年月</span> · <span data-i18n="info.born.value">2004.06</span></li>
+        <li><span data-i18n="info.langs">语言</span> · <span data-i18n="info.langs.value">中文 · 英语 · 粤语</span></li>
+      </ul>
+    </div>
+
+    <h3 class="section-title" style="font-size:18px;" data-i18n="strength.title">三把武器</h3>
+    <div class="grid-3">
+      <div class="panel reveal">
+        <h3 data-i18n="s1.title">语言能力</h3>
+        <p data-i18n="s1.desc">英语专业本科训练，持 TEM-8、TEM-4、CET-6，IELTS 6.5。</p>
+      </div>
+      <div class="panel reveal">
+        <h3 data-i18n="s2.title">组织执行</h3>
+        <p data-i18n="s2.desc">三年学生干部，统筹团委事务并组织 50 余人团队落地活动。</p>
+      </div>
+      <div class="panel reveal">
+        <h3 data-i18n="s3.title">跨文化沟通</h3>
+        <p data-i18n="s3.desc">中英粤三语沟通，跨境电商平台售后与国际客户沟通实务经验。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="wrap">
+    <h2 class="section-title" data-i18n="edu.title">教育经历</h2>
+    <p class="section-sub" data-i18n="edu.sub">Education</p>
+
+    <div class="grid-2">
+      <div class="panel reveal">
+        <div class="meta" data-i18n="edu.master.period">2026.09 — 2027.06</div>
+        <h3 data-i18n="edu.master.school">香港理工大学</h3>
+        <p style="margin-top:6px;font-weight:700;" data-i18n="edu.master.major">翻译与语言技术 · 硕士</p>
+      </div>
+      <div class="panel reveal">
+        <div class="meta" data-i18n="edu.bachelor.period">2022.09 — 2026.06</div>
+        <h3 data-i18n="edu.bachelor.school">重庆大学</h3>
+        <p style="margin-top:6px;font-weight:700;" data-i18n="edu.bachelor.major">英语专业 · 本科</p>
+        <p class="meta" style="margin-top:8px;" data-i18n="edu.bachelor.gpa">GPA 3.5 / 4.0</p>
+      </div>
+    </div>
+
+    <div class="divider reveal" style="margin-top:34px;"><i></i><b>◆</b><i></i></div>
+
+    <div class="grid-2">
+      <div class="panel reveal">
+        <h3 data-i18n="edu.courses.title">核心课程</h3>
+        <p style="margin-top:10px;font-size:14.5px;" data-i18n="edu.courses.list">英美社会与文化 · 中西文化比较 · 跨文化交际 · 外语数据处理与分析 · 英语交际口语 · 多媒体辅助陈述与沟通 · 应用语言学 · 语用学</p>
+      </div>
+      <div class="panel reveal">
+        <h3 data-i18n="edu.awards.title">荣誉奖项</h3>
+        <ul>
+          <li data-i18n="award.1">校级奖学金（2022、2023、2025）</li>
+          <li data-i18n="award.2">重庆大学优秀学生干部（2024、2025）</li>
+          <li data-i18n="award.3">重庆大学学生会先进个人（2025）</li>
+          <li data-i18n="award.4">重庆大学优秀共青团干部（2024、2025）</li>
+          <li data-i18n="award.5">重庆大学优秀共青团员（2023）</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="section-title" style="font-size:18px;margin-top:40px;" data-i18n="exp.title">实践经历</h3>
+    <div class="stack">
+      <div class="panel reveal" style="max-width:760px;margin:0 auto;">
+        <div class="meta" data-i18n="exp.1.period">2024.06 — 2025.06</div>
+        <h3 data-i18n="exp.1.role">重庆大学外国语学院 团委副书记</h3>
+        <p style="margin-top:10px;" data-i18n="exp.1.desc">统筹学院团委日常事务与品牌活动（院系联合团校、联合团日活动）；组织 50 余名学生成员参与筹备与执行；带领多支团队完成校级社会实践，院团委获评寒/暑假社会实践优秀组织单位。</p>
+      </div>
+      <div class="panel reveal" style="max-width:760px;margin:0 auto;">
+        <div class="meta" data-i18n="exp.2.period">2024.06 — 2024.09</div>
+        <h3 data-i18n="exp.2.role">浙江佑游科技有限公司 · 亚马逊平台实习生</h3>
+        <p style="margin-top:10px;" data-i18n="exp.2.desc">负责佑游品牌产品海外平台售后处理与客户沟通，通过 Seller Central 协助优化售后响应机制；汇总客户反馈并提出改进建议，完善跨境售后流程。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <h2 class="section-title" data-i18n="skills.title">技能</h2>
+    <p class="section-sub" data-i18n="skills.sub">Skills</p>
+
+    <div class="grid-2">
+      <div class="panel reveal">
+        <h3 data-i18n="skills.cert.title">证书</h3>
+        <div class="tags">
+          <span class="tag big">CET-6</span>
+          <span class="tag big">TEM-4</span>
+          <span class="tag big">TEM-8</span>
+          <span class="tag big">IELTS 6.5</span>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <h3 data-i18n="skills.tool.title">工具</h3>
+        <div class="tags">
+          <span class="tag big">Excel</span>
+          <span class="tag big">Photoshop</span>
+          <span class="tag big">SPSS</span>
+          <span class="tag big" data-i18n="tool.prog">基础编程</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section-title" style="font-size:18px;margin-top:40px;" data-i18n="skills.lang.title">语言能力</h3>
+    <div class="meter-list reveal">
+      <div class="meter">
+        <div class="meter-top">
+          <span class="n" data-i18n="lang.zh.n">中文</span>
+          <span class="lv" data-i18n="lang.zh.lv">母语</span>
+        </div>
+        <div class="meter-bar lv3"></div>
+      </div>
+      <div class="meter">
+        <div class="meter-top">
+          <span class="n" data-i18n="lang.en.n">英语</span>
+          <span class="lv" data-i18n="lang.en.lv">TEM-8 · IELTS 6.5</span>
+        </div>
+        <div class="meter-bar lv3"></div>
+      </div>
+      <div class="meter">
+        <div class="meter-top">
+          <span class="n" data-i18n="lang.yue.n">粤语</span>
+          <span class="lv" data-i18n="lang.yue.lv">日常沟通</span>
+        </div>
+        <div class="meter-bar lv2"></div>
+      </div>
+    </div>
+
+    <div class="panel reveal" style="max-width:760px;margin:34px auto 0;">
+      <h3 data-i18n="skills.soft.title">其他能力</h3>
+      <div class="tags">
+        <span class="tag" data-i18n="soft.list">跨文化沟通 · 活动组织与协调 · 数据分析基础 · 基础编程</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section" id="works">
+  <div class="wrap">
+    <h2 class="section-title" data-i18n="works.title">翻译作品集</h2>
+    <p class="section-sub" data-i18n="works.sub">译文节选 + 翻译选择说明</p>
+
+    <p class="section-sub" style="margin-top:-16px;margin-bottom:26px;" data-i18n="works.meta">英译汉 · 原文 The Solace of Open Spaces —— 译作《旷野的慰藉》</p>
+
+    <div class="grid-3">
+      <div class="panel work reveal">
+        <span class="no" data-i18n="work.no">选段</span> 01
+        <h3 data-i18n="work.1.title">羊群、冰雹与荒原</h3>
+        <div class="block">
+          <div class="lab" data-i18n="work.src.lab">原文</div>
+          <div class="txt src" data-i18n="work.1.src">It's May and I've just awakened from a nap, curled against sagebrush the way my dog taught me to sleep — sheltered from wind.</div>
+        </div>
+        <div class="block">
+          <div class="lab" data-i18n="work.tr.lab">译文</div>
+          <div class="txt" data-i18n="work.1.tr">那是五月的一天，我刚从午睡中醒来，蜷曲在灌木蒿旁，恰如我的狗教我那样，避风而眠。</div>
+        </div>
+        <div class="block">
+          <div class="lab" data-i18n="work.note.lab">翻译选择</div>
+          <div class="txt note" data-i18n="work.1.note">shade up 与 won't budge 没有硬译，而是补出因果。</div>
+        </div>
+      </div>
+
+      <div class="panel work reveal">
+        <span class="no" data-i18n="work.no">选段</span> 02
+        <h3 data-i18n="work.2.title">疯狂建筑师的杰作</h3>
+        <div class="block">
+          <div class="lab" data-i18n="work.src.lab">原文</div>
+          <div class="txt src" data-i18n="work.2.src">In the Great Plains the vistas look like music, like Kyries of grass, but Wyoming seems to be the doing of a mad architect.</div>
+        </div>
+        <div class="block">
+          <div class="lab" data-i18n="work.tr.lab">译文</div>
+          <div class="txt" data-i18n="work.2.tr">在大平原上，景色看起来像乐曲，像牧草的赞歌，但怀俄明州似乎是疯狂建筑师的作品。</div>
+        </div>
+        <div class="block">
+          <div class="lab" data-i18n="work.note.lab">翻译选择</div>
+          <div class="txt note" data-i18n="work.2.note">Kyries 意译为「牧草的赞歌」，不加注也能接住通感。</div>
+        </div>
+      </div>
+
+      <div class="panel work reveal">
+        <span class="no" data-i18n="work.no">选段</span> 03
+        <h3 data-i18n="work.3.title">荒原上的人生</h3>
+        <div class="block">
+          <div class="lab" data-i18n="work.src.lab">原文</div>
+          <div class="txt src" data-i18n="work.3.src">A person's life is not a series of dramatic events for which he or she is applauded or exiled but a slow accumulation of days, seasons, years.</div>
+        </div>
+        <div class="block">
+          <div class="lab" data-i18n="work.tr.lab">译文</div>
+          <div class="txt" data-i18n="work.3.tr">一个人的生活不是一系列引人注目的事件，这些事件可能会让他或她受到称赞或被放逐，而是一个缓慢积累的日子、季节和年份的过程。</div>
+        </div>
+        <div class="block">
+          <div class="lab" data-i18n="work.note.lab">翻译选择</div>
+          <div class="txt note" data-i18n="work.3.note">fleshed out 与 anchored 用「由……所充实 / 由……所锚定」并列译出。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CV DOWNLOAD ============ -->
+<section class="section" id="cv">
+  <div class="wrap">
+    <h2 class="section-title" data-i18n="cv.title">简历下载</h2>
+    <p class="section-sub" data-i18n="cv.sub">CV download</p>
+
+    <div class="cv-box reveal" style="max-width:640px;margin:0 auto;">
+      <h3 data-i18n="cv.h">完整简历 PDF</h3>
+      <p data-i18n="cv.lead">一页看完学历、奖项与实践经历（中文版）。</p>
+      <a class="btn btn-solid" href="./cv.pdf" download="TaiXiangwei-CV.pdf" type="application/pdf" data-cv-download data-i18n="cv.btn">下载 PDF 简历</a>
+      <div class="cv-meta" data-i18n="cv.meta">文件：cv.pdf · 中文</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <h2 class="section-title" data-i18n="contact.title">联系我</h2>
+    <p class="section-sub" data-i18n="contact.sub">Contact</p>
+
+    <p class="reveal" style="font-size:16px;font-weight:700;margin-bottom:20px;" data-i18n="contact.lead">想聊翻译、项目或合作，直接发邮件给我。</p>
+
+    <div class="reveal">
+      <div class="lab" style="font-size:12px;font-weight:800;letter-spacing:2px;color:var(--gray);" data-i18n="contact.mail.lab">邮箱</div>
+      <a class="contact-mail" href="mailto:taixiangwei2026@163.com" data-i18n="info.email.value">taixiangwei2026@163.com</a>
+    </div>
+
+    <div class="reveal" style="margin-top:30px;">
+      <a class="btn btn-solid" href="mailto:taixiangwei2026@163.com" data-i18n="contact.btn">发邮件给我</a>
+    </div>
+
+    <p class="contact-note reveal" data-i18n="contact.note">手机号未对外公开；如需展示，可在页面里补上。</p>
+    <p class="contact-thanks reveal" data-i18n="contact.thanks">谢谢你看到最后！</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fl" data-i18n="footer.name">邰翔伟 · TAI XIANGWEI</div>
+    <div class="footer-links">
+      <a href="#about" data-i18n="nav.about">关于</a>
+      <a href="#education" data-i18n="nav.edu">教育</a>
+      <a href="#skills" data-i18n="nav.skills">技能</a>
+      <a href="#works" data-i18n="nav.works">作品集</a>
+      <a href="./cv.pdf" download="TaiXiangwei-CV.pdf" type="application/pdf" data-cv-download data-i18n="cv.btn">下载 PDF 简历</a>
+    </div>
+    <p data-i18n="footer.rights">© {year} 邰翔伟. 保留所有权利。</p>
+    <p data-i18n="footer.made">热血黑白漫画风 · 纯手写 HTML / CSS / JavaScript</p>
+  </div>
+</footer>
+
+<script src="./assets/js/i18n.js"></script>
+<script src="./assets/js/cv-data.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
